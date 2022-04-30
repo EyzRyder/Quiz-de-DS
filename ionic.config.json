@@ -1,0 +1,7 @@
+{
+  "name": "Quiz de DS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
