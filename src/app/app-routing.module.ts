@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
+  {
+    path: 'etim',
+    loadChildren: () => import('./page/questions/etim/etim.module').then( m => m.EtimPageModule)
+  },
 ];
 
 @NgModule({
