@@ -1,0 +1,5 @@
+.ioncolwrap{
+  flex: 0 0 calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+  width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+  max-width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
+}
