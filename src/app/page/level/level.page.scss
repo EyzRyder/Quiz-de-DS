@@ -3,3 +3,22 @@
   width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
   max-width: calc(calc(6 / var(--ion-grid-columns, 12)) * 100%);
 }
+.quiz-icon{
+  margin: 10px 0;
+  padding: 0%;
+  position: relative;
+}
+.quiz-name{
+  color: white;
+  font-family: Nunito-ExtraBold;
+  font-size: 24px;
+}
+.box{
+  position: absolute;
+  top: 34%;
+  left: 30%;
+}
+.quiz-box{
+  text-align: center;
+  position: relative;
+}

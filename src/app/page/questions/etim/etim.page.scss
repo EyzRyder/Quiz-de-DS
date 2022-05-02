@@ -1,15 +1,17 @@
 .content-page{
-    min-height: 100%;
-    min-width: 100%;
-    text-align: center;
+  min-height: 100%;
+  min-width: 100%;
+  text-align: center;
 }
+
 .top{
   padding: 3% 0 0 0;
   width: 80%;
   display: inline-flex;
   justify-content: space-between;
 }
-.question{
+
+.question {
   font-family: Koulen;
   font-size: 25px;
   padding: 0;
@@ -24,7 +26,8 @@
   margin-inline-end: 0px;
   font-weight: bold;
 }
-p{
+
+p {
   font-size: small;
   display: block;
   margin-block-start: 1em;
@@ -32,50 +35,54 @@ p{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .container {
-  width: 60%;
+  width: 95%;
   border: white 0px solid;
   padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 div{
   display: block;
 }
+
 .center {
   align-items: center;
   text-align: center;
 }
+
 .flex {
   display: inline-flex;
   justify-content: center;
   flex-direction: row;
   flex-basis: auto;
-  width: 70%;
+  max-width: 260px;
   height: auto;
   flex-wrap: wrap;
 }
+
 .answers{
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   padding-left: 25px;
   padding-right: 25px;
   font-size: 110%;
-  cursor: pointer;
-    font-family: Inter;
-    text-align: center;
-    font-size: 100%;
-    color: #06070B;
-    background-color: #E9EAE8;
-    border: #E9EAE8 1px solid;
-    line-height: 100%;
-    padding: 10px 15px 10px 15px;
-    border: 0;
-    margin-top: 20px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 75ms ease-in-out;
+  font-family: Inter;
+  text-align: center;
+  font-size: 100%;
+  color: #06070B;
+  background-color: #E9EAE8;
+  border: #E9EAE8 1px solid;
+  line-height: 100%;
+  padding: 10px 15px 10px 15px;
+  border: 0;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 75ms ease-in-out;
 }
