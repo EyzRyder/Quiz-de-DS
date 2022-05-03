@@ -1,5 +1,10 @@
+#bg{
+  --background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='720' height='1020' preserveAspectRatio='none' viewBox='0 0 720 1020'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1836%26quot%3b)' fill='none'%3e%3crect width='720' height='1020' x='0' y='0' fill='url(%23SvgjsLinearGradient1837)'%3e%3c/rect%3e%3cpath d='M64 1020L1084 0L1172.5 0L152.5 1020z' fill='url(%23SvgjsLinearGradient1838)'%3e%3c/path%3e%3cpath d='M634 1020L-386 0L-737 0L283 1020z' fill='url(%23SvgjsLinearGradient1839)'%3e%3c/path%3e%3cpath d='M72.22775725543738 1020L720 372.2277572554374L720 1020z' fill='url(%23SvgjsLinearGradient1838)'%3e%3c/path%3e%3cpath d='M0 1020L647.7722427445626 1020L 0 372.2277572554374z' fill='url(%23SvgjsLinearGradient1839)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1836'%3e%3crect width='720' height='1020' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='-10.42%25' y1='7.35%25' x2='110.42%25' y2='92.65%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1837'%3e%3cstop stop-color='rgba(15%2c 13%2c 2%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(84%2c 74%2c 6%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='100%25' y2='0%25' id='SvgjsLinearGradient1838'%3e%3cstop stop-color='rgba(157%2c 139%2c 19%2c 0.17)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 139%2c 19%2c 0.17)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='100%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1839'%3e%3cstop stop-color='rgba(157%2c 139%2c 19%2c 0.17)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='rgba(157%2c 139%2c 19%2c 0.17)' offset='0.66'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  --background-position: center;
+  --background-attachment: fixed;
+}
 #container {
-  --background: #000000;
+color: aliceblue;
   padding: 10px;
   position: absolute;
 }
