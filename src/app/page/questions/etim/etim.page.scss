@@ -29,7 +29,14 @@
 
 p {
   font-size: small;
-  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.conteiner span{
+  font-size: small;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;

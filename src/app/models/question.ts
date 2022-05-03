@@ -1,6 +1,6 @@
 export interface Question {
   title: string;
-  level?: number;
+  description: string;
   answers: QuestionAnswer[];
 }
 

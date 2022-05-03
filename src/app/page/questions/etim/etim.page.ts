@@ -1,5 +1,7 @@
+import { QuestionService } from './../../../question.service';
 import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,58 +11,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EtimPage implements OnInit {
 
-  questions: Question[] = [
-{
-  title: 'What was the median income of the united states in 2022',
-  answers: [
-    {description: 'Resposta 1 P1', isRight: false},
-    {description: 'Resposta 2 P1', isRight: true},
-    {description: 'Resposta 3 P1', isRight: false},
-    {description: 'Resposta 4 P1', isRight: false},
-  ]
-},
-{
-  title: 'Pergunta 2',
-  answers: [
-    {description: 'Resposta 1 P2', isRight: false},
-    {description: 'Resposta 2 P2', isRight: true},
-    {description: 'Resposta 3 P2', isRight: false},
-    {description: 'Resposta 4 P2', isRight: false},
-  ]
-},
-{
-  title: 'Pergunta 3',
-  answers: [
-    {description: 'Resposta 1 P3', isRight: false},
-    {description: 'Resposta 2 P3', isRight: true},
-    {description: 'Resposta 3 P3', isRight: false},
-    {description: 'Resposta 4 P3', isRight: false},
-  ]
-},
-{
-  title: 'Pergunta 4',
-  answers: [
-    {description: 'Resposta 1 P4', isRight: false},
-    {description: 'Resposta 2 P4', isRight: true},
-    {description: 'Resposta 3 P4', isRight: false},
-    {description: 'Resposta 4 P4', isRight: false},
-  ]
-}
-];
-
 curQuesion: Question;
-questionIndex: number = 0;
+ curNumber: number = 1;
+ points: number = 0;
+constructor(
+  private questionService: QuestionService,
+  private router: Router
+){}
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questions[this.questionIndex];
+    this.curQuesion = this.questionService.nextQuestion();
   }
 
 doAnswer(answer: QuestionAnswer){
-  if(answer.isRight){
-  this.questionIndex++;
-  this.curQuesion = this.questions[this.questionIndex];
-  }
+  if(answer.isRight && this.curNumber<6){
+  this.curNumber++;
+  this.points++;
+  this.curQuesion = this.questionService.nextQuestion();
+  }else{
+    this.curQuesion = this.questionService.nextQuestion();
+    this.curNumber++;
+}
+
+if(this.curNumber===6){
+  this.router.navigate(['about']);
+  return;
+}
 }
 
 }

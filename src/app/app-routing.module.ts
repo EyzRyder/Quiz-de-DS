@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'etim',
     loadChildren: () => import('./page/questions/etim/etim.module').then( m => m.EtimPageModule)
   },
+  {
+    path: 'end',
+    loadChildren: () => import('./page/end/end.module').then( m => m.EndPageModule)
+  },
 ];
 
 @NgModule({

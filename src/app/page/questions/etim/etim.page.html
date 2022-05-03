@@ -2,18 +2,16 @@
   <br><br>
   <div class="top">
     <div class="time">00:00</div>
-    <div class="score">0</div>
+    <div class="score">{{points}}</div>
   </div>
   <div class="container">
     <div class="center">
-      <p>Questao 1/5</p>
+      <span>Questao {{curNumber}}/5</span>
       <div class="question">
         {{curQuesion.title}}
       </div>
       <i>
-        <p>
-          The median means thes 50% makes above the number and 50%makes below it.
-        </p>
+        <span>{{curQuesion.description}}</span>
       </i>
 
       <div class="flex">
