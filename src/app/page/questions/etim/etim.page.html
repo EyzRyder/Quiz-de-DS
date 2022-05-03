@@ -17,21 +17,8 @@
       </i>
 
       <div class="flex">
-        <div class="answers">
-          <span class="number">1uga</span>
-          <span class="answer">a</span>
-        </div>
-        <div class="answers">
-          <span class="number">21uga</span>
-          <span class="answer">b</span>
-        </div>
-        <div class="answers">
-          <span class="number">31uga</span>
-          <span class="answer">c</span>
-        </div>
-        <div class="answers">
-          <span class="number">41uga</span>
-          <span class="answer">d</span>
+        <div (click)="doAnswer(answer)" *ngFor="let answer of curQuesion.answers" class="answers">
+          <span class="answer">{{answer.description}}</span>
         </div>
       </div>
     </div>

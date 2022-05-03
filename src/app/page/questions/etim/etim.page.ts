@@ -1,4 +1,4 @@
-import { Question } from './../../../models/question';
+import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -51,8 +51,16 @@ export class EtimPage implements OnInit {
 curQuesion: Question;
 questionIndex: number = 0;
 
+
   ngOnInit(): void {
     this.curQuesion = this.questions[this.questionIndex];
   }
+
+doAnswer(answer: QuestionAnswer){
+  if(answer.isRight){
+  this.questionIndex++;
+  this.curQuesion = this.questions[this.questionIndex];
+  }
+}
 
 }
