@@ -26,11 +26,10 @@ export class EtimPage implements OnInit {
     if (answer.isRight && this.questionService.questionCount < 6) {
       this.questionService.points++;
       this.curQuesion = this.questionService.nextQuestion();
-    } if(answer.isRight === false && this.questionService.questionCount < 6) {
+    } if (answer.isRight === false && this.questionService.questionCount < 6) {
       this.curQuesion = this.questionService.nextQuestion();
     } if (this.questionService.questionCount === 6) {
       this.router.navigate(['end']);
     }
   }
-
 }
