@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { QuestionService } from '../../question.service';
+
 
 @Component({
   selector: 'app-end',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EndPage implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router,
+    private questionService: QuestionService,) {}
 
   ngOnInit() {
   }

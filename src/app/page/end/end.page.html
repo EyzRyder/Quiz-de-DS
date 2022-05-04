@@ -1,9 +1,18 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>end</ion-title>
+    <ion-title>Results</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <div id="all-black-section">
+      <div class="container">
+        <p class="result-statement">0</p>
+        <br>
+        <p>You can play again with new question content or return home to learn more about the project!</p>
+        <ion-button routerLink="/../level" expand="block" fill="outline" class="btn2">Jogar de Novo</ion-button>
+        <br>
+        <ion-button routerLink="/../../home" expand="block" fill="outline" class="btn2">Voltar</ion-button>
+      </div>
+  </div>
 </ion-content>

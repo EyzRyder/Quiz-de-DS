@@ -5,7 +5,8 @@ import { Question, QuestionAnswer } from './models/question';
   providedIn: 'root'
 })
 export class QuestionService {
-  private questionCount: number = 0;
+ questionCount: number = 0;
+ points: number = 0;
   private questions: Question[] = [
     {
       title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',

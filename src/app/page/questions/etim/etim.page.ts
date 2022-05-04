@@ -11,33 +11,26 @@ import { Router } from '@angular/router';
 })
 export class EtimPage implements OnInit {
 
-curQuesion: Question;
- curNumber: number = 1;
- points: number = 0;
-constructor(
-  private questionService: QuestionService,
-  private router: Router
-){}
+  curQuesion: Question;
+  constructor(
+    private questionService: QuestionService,
+    private router: Router
+  ) { }
 
 
   ngOnInit(): void {
     this.curQuesion = this.questionService.nextQuestion();
   }
 
-doAnswer(answer: QuestionAnswer){
-  if(answer.isRight && this.curNumber<6){
-  this.curNumber++;
-  this.points++;
-  this.curQuesion = this.questionService.nextQuestion();
-  }else{
-    this.curQuesion = this.questionService.nextQuestion();
-    this.curNumber++;
-}
-
-if(this.curNumber===6){
-  this.router.navigate(['about']);
-  return;
-}
-}
+  doAnswer(answer: QuestionAnswer) {
+    if (answer.isRight && this.questionService.questionCount < 6) {
+      this.questionService.points++;
+      this.curQuesion = this.questionService.nextQuestion();
+    } if(answer.isRight === false && this.questionService.questionCount < 6) {
+      this.curQuesion = this.questionService.nextQuestion();
+    } if (this.questionService.questionCount === 6) {
+      this.router.navigate(['end']);
+    }
+  }
 
 }
