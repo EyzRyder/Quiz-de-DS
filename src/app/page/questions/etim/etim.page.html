@@ -1,12 +1,14 @@
 <ion-content class="content-page">
   <br><br>
   <div class="top">
-    <div class="time">00:00</div>
-    <div class="score">{{points}}</div>
+    <div class="time"><p id="offwhite" class = "counter"><span class="hour">00</span>:<span class="minute">00</span>:<span class="second">00</span></p></div>
+    <div class="score">
+      <p id="offwhite">Pontuação</p>
+      <p id="offwhite" class ="score">{{points}}</p></div>
   </div>
   <div class="container">
     <div class="center">
-      <span>Questao {{curNumber}}/5</span>
+      <span>Questão {{curNumber}}/5</span>
       <div class="question">
         {{curQuesion.title}}
       </div>

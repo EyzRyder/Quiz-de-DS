@@ -8,43 +8,53 @@ export class QuestionService {
   private questionCount: number = 0;
   private questions: Question[] = [
     {
-      title: 'What was the median income of the united states in 2022',
-      description:'The median means thes 50% makes above the number and 50%makes below it.',
+      title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
+      description:'Ds e infonet ambos construem websites',
       answers: [
-        {description: 'Resposta 1 P1', isRight: false},
-        {description: 'Resposta 2 P1', isRight: true},
-        {description: 'Resposta 3 P1', isRight: false},
-        {description: 'Resposta 4 P1', isRight: false},
+        {description: ' A classificação de endereço de IP externo não existe, só a de endereço de IP', isRight: false},
+        {description: 'O endereço de IP externo não é considerado como dado do usuário', isRight: false},
+        {description: 'O endereço IP externo é o identificador único e exclusivo do usuário da rede', isRight: true},
+        {description: 'O endereço IP externo apenas representa a individualidade do usuário, mas não é usado como um dado', isRight: false},
       ]
     },
     {
-      title: 'Pergunta 2',
-      description:'testrfdgerfged',
+      title: 'Qual destas linguagens de programação ou marcação é utilizada para o layout do site?',
+      description:'Ds e infonet ambos construem websites',
       answers: [
-        {description: 'Resposta 1 P2', isRight: false},
-        {description: 'Resposta 2 P2', isRight: true},
-        {description: 'Resposta 3 P2', isRight: false},
-        {description: 'Resposta 4 P2', isRight: false},
+        {description: 'HTML', isRight: true},
+        {description: 'Java', isRight: false},
+        {description: 'Angular', isRight: false},
+        {description: 'C', isRight: false},
       ]
     },
     {
-      title: 'Pergunta 3',
-      description:'testergerg',
+      title: 'O que é cookie na web?',
+      description:'Ds e Infonet ambas trabalha com cookie.',
       answers: [
-        {description: 'Resposta 1 P3', isRight: false},
-        {description: 'Resposta 2 P3', isRight: true},
-        {description: 'Resposta 3 P3', isRight: false},
-        {description: 'Resposta 4 P3', isRight: false},
+        {description: 'É biscoito em inglês', isRight: false},
+        {description: 'É um dado do site que é armazenado no servidor local (do usuário)', isRight: true},
+        {description: ' É um dado que o site armazena no servidor local até que o usuário saia do site', isRight: false},
+        {description: 'É um dado irrelevante que só serve para deixar a internet mais lenta', isRight: false},
       ]
     },
     {
-      title: 'Pergunta 4',
+      title: 'Em qual dessas partes da estrutura HTML se conecta a linguagem ao CSS?',
       description:'testfddgfgr',
       answers: [
-        {description: 'Resposta 1 P4', isRight: false},
-        {description: 'Resposta 2 P4', isRight: true},
-        {description: 'Resposta 3 P4', isRight: false},
-        {description: 'Resposta 4 P4', isRight: false},
+        {description: 'head', isRight: true},
+        {description: 'header', isRight: false},
+        {description: 'script', isRight: false},
+        {description: 'body', isRight: false},
+      ]
+    },
+    {
+      title: 'Assinale a escolha mais antiética a se fazer na internet.',
+      description:'testfddgfgr',
+      answers: [
+        {description: 'Não praticar o cyberbullying', isRight: false},
+        {description: 'Contribuir com a disseminação de informações verdadeiras', isRight: false},
+        {description: 'Fazer ações de proteção da fauna e flora nas redes sociais', isRight: false},
+        {description: ' Praticar o Doxx (Vazamento de Dados)', isRight: true},
       ]
     }
     ];
