@@ -1,0 +1,119 @@
+ {
+      title: 'Qual formato de armazenamentos de dados utilizado por DS e Adm?',
+      description:'DS e Adm ambas mexem com armazenamentos de dados',
+      answers: [
+        {description: 'Se salvo, porem num aplicativo ou site que os abas sao compartilhado', isRight: false},
+        {description: 'No Baco de Dados, cujo os dados serao particulares', isRight: true},
+        {description: 'Sites particulares, que os dados serao armazenados sem perigo', isRight: false},
+        {description: 'Nenhuma das alternativas', isRight: false},
+      ]
+  }
+ {
+      title: 'Porque os sites e os Banco de Dados sao importante?',
+      description:'Banco de Dados e bem importante DS e Adm',
+      answers: [
+        {description: 'Que e uma forma de pesquisarmos sobre os termos diversos', isRight: true},
+        {description: '', isRight: false},
+        {description: '', isRight: false},
+        {description: '', isRight: false},
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+ {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }

@@ -14,7 +14,7 @@ export class EtimPage implements OnInit {
   curQuesion: Question;
   constructor(
     private questionService: QuestionService,
-    private router: Router
+    private router: Router,
   ) { }
 
 
@@ -23,13 +23,11 @@ export class EtimPage implements OnInit {
   }
 
   doAnswer(answer: QuestionAnswer) {
-    if (answer.isRight && this.questionService.questionCount < 6) {
+    if (answer.isRight) {
       this.questionService.points++;
       this.curQuesion = this.questionService.nextQuestion();
-    } if (answer.isRight === false && this.questionService.questionCount < 6) {
+    } else {
       this.curQuesion = this.questionService.nextQuestion();
-    } if (this.questionService.questionCount === 6) {
-      this.router.navigate(['end']);
     }
   }
 }

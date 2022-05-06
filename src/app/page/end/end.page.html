@@ -1,18 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Results</ion-title>
+    <ion-title>Resultado</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div id="all-black-section">
-      <div class="container">
-        <p class="result-statement">0</p>
-        <br>
-        <p>You can play again with new question content or return home to learn more about the project!</p>
-        <ion-button routerLink="/../level" expand="block" fill="outline" class="btn2">Jogar de Novo</ion-button>
-        <br>
-        <ion-button routerLink="/../../home" expand="block" fill="outline" class="btn2">Voltar</ion-button>
-      </div>
+    <div class="container">
+      <br><br><br><br>
+      <ion-card>
+         <p>Voce acertou <label>{{questionService.endpoint}}</label>/<label>5</label> em <label>00</label>:<label>00</label>:<label>00</label> de tempo</p>
+        <ion-card-content>
+          <p>Voce pode jogar de novo ou voltar pra menu incial pra saber mais sobre nosso projeto!</p>
+        </ion-card-content>
+      </ion-card>
+
+      <br>
+
+      <ion-button routerLink="/../level" expand="block" fill="outline" class="btn2">Jogar de Novo</ion-button>
+      <br>
+      <ion-button routerLink="/../../home" expand="block" fill="outline" class="btn2">Voltar</ion-button>
+    </div>
   </div>
 </ion-content>
