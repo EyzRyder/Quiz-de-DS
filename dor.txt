@@ -1,25 +1,119 @@
  {
-      title: 'Qual formato de armazenamentos de dados utilizado por DS e Adm?',
-      description:'DS e Adm ambas mexem com armazenamentos de dados',
+   {
+      title: ' Qual forma de armazenamento de dados utilizado por DS e Adm?',
+      description:'DS e Adm ambas mexem com armazenamentos de dados.',
       answers: [
-        {description: 'Se salvo, porem num aplicativo ou site que os abas sao compartilhado', isRight: false},
-        {description: 'No Baco de Dados, cujo os dados serao particulares', isRight: true},
-        {description: 'Sites particulares, que os dados serao armazenados sem perigo', isRight: false},
+        {description: 'Só salvo, porém num aplicativo ou site que os dados são compartilhados.', isRight: false},
+        {description: 'No Banco de Dados, cujo os dados são particulares.', isRight: true},
+        {description: 'Sites particulares, que os dados serão armazenados sem perigo algum.', isRight: false},
         {description: 'Nenhuma das alternativas', isRight: false},
       ]
   }
- {
-      title: 'Porque os sites e os Banco de Dados sao importante?',
-      description:'Banco de Dados e bem importante DS e Adm',
+
+  {
+      title: 'Porque os sites e os Bancos de dados são importantes na administração?',
+      description:'Banco de Dados é armazenamentos de dados.',
       answers: [
-        {description: 'Que e uma forma de pesquisarmos sobre os termos diversos', isRight: true},
-        {description: '', isRight: false},
-        {description: '', isRight: false},
-        {description: '', isRight: false},
+        {description: 'Pois é uma forma de pesquisarmos sobre os temas diversos e armazenar  os dados.', isRight: true},
+        {description: 'São usados mas não são importantes.', isRight: false},
+        {description: 'Não sao usados nem são importantes', isRight: false},
+        {description: 'Apenas utilizamos sites, os Bancos de dados não estão envolvidos', isRight: false},
       ]
   }
 
- {
+  {
+      title: 'Quais apps são utilizados na administração com relação aos Bancos de dados?',
+      description:'',
+      answers: [
+        {description: 'apenas access', isRight: false},
+        {description: 'apenas excel', isRight: false},
+        {description: 'excel e word', isRight: false},
+        {description: 'excel e access', isRight: true},
+      ]
+  }
+
+  {
+      title: 'Qual a importância do Excel e access na administração para os Bancos de dados?',
+      description:'',
+      answers: [
+        {description: 'O Banco de dados e administração não tem ligação alguma.', isRight: false},
+        {description: 'São importantes para armazenar os dados em tabelas ou planilhas envolvendo o Banco de dados.', isRight: true},
+        {description: 'Os apps não salvam os dados e assim eles são perdidos.', isRight: false},
+        {description: ' Nenhuma das alternativas anteriores.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Que tipo (s) de administração tem em DS?',
+      description:'',
+      answers: [
+        {description: 'Administração de Banco de Dados, Scrum Master e Administração de redes', isRight: true},
+        {description: 'Administração de Banco de Dados e Administração de redes', isRight: false},
+        {description: 'Apenas administração de redes', isRight: false},
+        {description: 'nao tem', isRight: false},
+      ]
+  }
+ }
+
+{
+  {
+      title: 'Em geral, quais as relações entre eletrônica e DS?',
+      description:'',
+      answers: [
+        {description: 'Apenas nos sites.', isRight: false},
+        {description: 'Apenas nos apps.', isRight: false},
+        {description: 'Sites, apps, Banco de dados, construção de PC, design e programação.', isRight: true},
+        {description: 'Nenhuma das alternativas.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Qual linguagem de programação aprenderam e utilizam em eletrônica?',
+      description:'Os apps e sites feitos em eletrônica envolvem programação.',
+      answers: [
+        {description: 'HTML e Java', isRight: false},
+        {description: 'C# e Javascript', isRight: false},
+        {description: 'Python, php e Html.', isRight: false},
+        {description: 'C e HTML', isRight: true},
+      ]
+  }
+
+  {
+      title: 'Quais construções de eletrônica que fizeram ao decorrer do curso que utilizaram uma certa programação para funcionar.',
+      description:'',
+      answers: [
+        {description: 'Construção do LCD (Liquid Crystal Display), Leds, além de sites e apps.', isRight: true},
+        {description: 'Construção de brinquedos.', isRight: false},
+        {description: 'Construção de Robôs.', isRight: false},
+        {description: 'Nenhuma das alternativas.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Como hardware e software se relacionam?',
+      description:'',
+      answers: [
+        {description: 'Eles não se relacionam.', isRight: false},
+        {description: 'O hardware destina-se a executar a tarefa no nível da máquina, enquanto o software fornece instruções para o hardware.', isRight: true},
+        {description: 'O software destina-se a executar a tarefa no nível da máquina, enquanto o hardware fornece instruções para o software.', isRight: false},
+        {description: 'Todas as alternativas estão corretas.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'DS tem relação com Eletro.',
+      description:'',
+      answers: [
+        {description: 'Não tem relação.', isRight: false},
+        {description: 'Não muito, só na parte de Programação.', isRight: false},
+        {description: 'Tem uma grande relação.', isRight: true},
+        {description: 'São a mesma coisa', isRight: false},
+      ]
+  }
+}
+
+{
+  {
       title: '',
       description:'',
       answers: [
@@ -30,7 +124,7 @@
       ]
   }
 
- {
+  {
       title: '',
       description:'',
       answers: [
@@ -41,7 +135,7 @@
       ]
   }
 
- {
+  {
       title: '',
       description:'',
       answers: [
@@ -52,7 +146,7 @@
       ]
   }
 
- {
+  {
       title: '',
       description:'',
       answers: [
@@ -63,7 +157,7 @@
       ]
   }
 
- {
+  {
       title: '',
       description:'',
       answers: [
@@ -73,41 +167,10 @@
         {description: '', isRight: },
       ]
   }
+}
 
- {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
 
- {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
- {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
- {
+{
       title: '',
       description:'',
       answers: [

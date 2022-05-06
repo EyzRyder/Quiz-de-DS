@@ -124,9 +124,9 @@ export class QuestionService {
     console.log(this.questions);
     return this.questions.splice(randomIndex, 1)[0];
   }else{
+    this.questions = this.backup;
     this.endpoint = 0;
     this.questionCount = 1;
-    this.questions = this.backup;
     this.endpoint = this.points;
     this.points=0;
     this.router.navigate(['end']);
