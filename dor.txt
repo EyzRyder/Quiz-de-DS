@@ -1,3 +1,4 @@
+adm
  {
    {
       title: ' Qual forma de armazenamento de dados utilizado por DS e Adm?',
@@ -54,7 +55,7 @@
       ]
   }
  }
-
+Eletro
 {
   {
       title: 'Em geral, quais as relações entre eletrônica e DS?',
@@ -111,7 +112,7 @@
       ]
   }
 }
-
+Info
 {
     {
       title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
@@ -164,7 +165,295 @@
       ]
     }
 }
+Bio
+{
+  {
+      title: 'Qual sistema do nosso corpo humano pode ser comparado às partes do computador: HD e Memória RAM?',
+      description:'
+      O computador é como um corpo humano artificial <br>
+      HD: Armazenamento das informações. <br>
+      Ram: Usa as informações para ajir',
+      answers: [
+        {description: 'Sistema Nervoso', isRight: true},
+        {description: 'Sistema Cardiovascular', isRight: false},
+        {description: 'Sistema Endócrino', isRight: false},
+        {description: 'Sistema Digestivo', isRight: false},
+      ]
+  }
 
+  {
+      title: 'Qual a principal diferença entre o raciocínio de nosso cérebro em comparação com o de um computador e outros hardwares?',
+      description:'Hardware: é parte que é palpável, concreto',
+      answers: [
+        {description: 'Cérebro humano: raciocínio limitado apenas entre SIM e NÃO. Computador: infinitas possibilidades de escolhas.', isRight: false},
+        {description: 'O raciocínio dos dois são os mesmos.', isRight: false},
+        {description: 'Não há como compará-los', isRight: false},
+        {description: 'Cérebro humano: raciocínio com infinitas possibilidades(ele pode criar mais de duas opções); Computador: raciocínio limitado entre SIM e NÃO.', isRight: true},
+      ]
+  }
+
+  {
+      title: 'Assinale a alternativa mais viável para se realizar o descarte de lixo eletrônico:',
+      description:'Desenvolvedores de Sistemas utilizam frequentemente PCs para realizar seu trabalho. Porém a vida de seu hardware não é tão longa e o descarte incorreto pode acarretar em sérios impactos ambientais',
+      answers: [
+        {description: 'Leve ao ponto de coleta de lixo eletrônico mais próximo de sua residência', isRight: true},
+        {description: 'Separe o lixo eletrônico em uma sacola de lixo para, então, ser devidamente tratada pelos lixeiros', isRight: false},
+        {description: 'Desmonte-o e misture-o com o lixo comum', isRight: false},
+        {description: 'Descarte o hardware em um terreno baldio e deixe a natureza fazer sua decomposição', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Quais desses possíveis dados um satélite com a função de monitorar crises ambientais pode utilizar?',
+      description:'Pode-se afirmar que todos os satélites são conectados com algum tipo de sistema, que por sua vez é vinculado a um Banco de Dados',
+      answers: [
+        {description: 'Imagens detalhadamente captadas de vários locais do mundo, visando na utilização do GPS', isRight: false},
+        {description: 'Ondas eletromagnéticas vindas das torres de sua emissora de TV', isRight: false},
+        {description: 'Imagens quadro a quadro de alta resolução de uma região de hotspot', isRight: true},
+        {description: 'O calor do Sol e sua luz solar', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Mesmo sendo ciências muito distintas entre si, Desenvolvimento de Sistemas e a matéria de Biológicas possuem muitas conexões. Aponte uma conexão.',
+      description:'',
+      answers: [
+        {description: 'Máquinas a vapor e a saúde do trabalhador', isRight: false},
+        {description: 'O trator e a agricultura', isRight: false},
+        {description: 'O comércio de hardwares e o setor primário (extrativista)', isRight: false},
+        {description: 'Sistemas de Planejamento Dosimétrico e radioterapia', isRight: true},
+      ]
+  }
+}
+Sj
+{
+  {
+      title: 'Qual dos sites abaixos pode ser usados para organizar documentos juridicos utilizando um banco de dados?',
+      description:'organizacao, digitalizacao entre outros',
+      answers: [
+        {description: 'W3K DRIVING DIGITAL TRANSFORMATION', isRight: true},
+        {description: 'WIKIPÉDIA', isRight: false},
+        {description: 'YAPOLI', isRight: false},
+        {description: 'AMAZON MANAGEMENT', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Algo bem importante em qualquer area de SJ é o gerenciamento de arquivos, em qual das opções isso pode ser feito de melhor forma?',
+      description:'',
+      answers: [
+        {description: 'Papel e Caneta', isRight: false},
+        {description: 'Um Banco de Dados', isRight: true},
+        {description: 'WIKIPÉDIA', isRight: false},
+        {description: 'CERÉBRO', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Existem alguns metodos de se fazer uma denuncia, em qual das opções abaixo uma denuncia pode ser feita?',
+      description:'Denuncias de varios tipos podem ser feitas atraves da internet',
+      answers: [
+        {description: 'Sites e Apps para denuncia', isRight: true},
+        {description: 'WIKIPÉDIA', isRight: false},
+        {description: 'Site do Governo', isRight: false},
+        {description: 'Brainly', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Por que a digitalização de documentos e utilização de serviços de organização de dados são importantes em SJ?',
+      description:'',
+      answers: [
+        {description: 'Facilitação ao atualizar documentos, organiza-los e acessa-los', isRight: true},
+        {description: 'Deixar Bonito', isRight: false},
+        {description: 'Entrar na area digital', isRight: false},
+        {description: 'Estar na web', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Por que a entrada de informações legais e documentos do tipo são importantes estarem de facil acesso na internet?',
+      description:'',
+      answers: [
+        {description: 'Para que todos tenham acesso a seus dados', isRight: false},
+        {description: 'Para facilitar o acesso a dados juridicos e pessoais e serem atualizados mais facilmente', isRight: true},
+        {description: 'Para estarem na web', isRight: false},
+        {description: 'Para serem vendidos', isRight: false},
+      ]
+  }
+}
+Ev
+{
+  {
+      title: 'Quais programa(s) vocês mais utilizam em eventos?',
+      description:'',
+      answers: [
+        {description: 'Canva', isRight: false},
+        {description: 'Power point', isRight: false},
+        {description: 'Canva e Power point', isRight: true},
+        {description: 'Word e Excel', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Quais projetos feitos em eventos que envolvem o Canva e o Power point?',
+      description:'',
+      answers: [
+        {description: 'Pré-evento', isRight: true},
+        {description: 'Confecção de convites', isRight: false},
+        {description: 'Sites', isRight: false},
+        {description: 'Todas as alternativas estão corretas.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Qual o papel dos sites programados que vocês utilizam em eventos?',
+      description:'',
+      answers: [
+        {description: 'Divulgação e Marketing', isRight: true},
+        {description: 'Divulgar os produtos de supermercado.', isRight: false},
+        {description: 'Ensinar como programar', isRight: false},
+        {description: 'Nenhuma das alternativas anteriores.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Quando um evento vai acontecer, é correto afirmar que sites, plataformas e diversas redes sociais são utilizados para na divulgação?',
+      description:'',
+      answers: [
+        {description: 'Não, essas três formas de divulgação não são eficientes.', isRight: false},
+        {description: 'Sim, mas as redes sociais não se inclui.', isRight: false},
+        {description: 'Sim, nós utilizamos sites, plataformas e diversas redes sociais como o Instagram para divulgação', isRight: true},
+        {description: 'Nenhuma das anteriores.', isRight: false},
+      ]
+  }
+
+  {
+      title: 'Se não existisse programador e as redes sociais não fossem criadas, dificultaria a divulgação de um evento?',
+      description:'',
+      answers: [
+        {description: 'Não, seria divulgado da mesma forma.', isRight: false},
+        {description: 'Sim, o processo seria muito mais lento e atrairia bem menos pessoas para o evento.', isRight: true},
+        {description: 'Sim, mas só seria um pouco pior.', isRight: false},
+        {description: 'Todas estão corretas.', isRight: false},
+      ]
+  }
+}
+Dg
+{
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+}
+Sec
+{
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+
+  {
+      title: '',
+      description:'',
+      answers: [
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+        {description: '', isRight: },
+      ]
+  }
+}
+Di
 {
   {
       title: '',
@@ -233,76 +522,6 @@
       ]
   }
 
-questions: Question[];
-
-
-this.questions = [
-      {
-        title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
-        description: 'Ds e infonet ambos construem websites',
-        answers: [
-          { description: ' A classificação de endereço de IP externo não existe, só a de endereço de IP', isRight: false },
-          {description: 'O endereço de IP externo não é considerado como dado do usuário', isRight: false },
-          {description: 'O endereço IP externo é o identificador único e exclusivo do usuário da rede', isRight: true },
-          {description: 'O endereço IP externo apenas representa a individualidade do usuário, mas não é usado como um dado',
-          isRight: false },
-        ]
-      },
-      {
-        title: 'Qual destas linguagens de programação ou marcação é utilizada para o layout do site?',
-        description: 'Ds e infonet ambos construem websites',
-        answers: [
-          { description: 'HTML', isRight: true },
-          { description: 'Java', isRight: false },
-          { description: 'Angular', isRight: false },
-          { description: 'C', isRight: false },
-        ]
-      },
-      {
-        title: 'O que é cookie na web?',
-        description: 'Ds e Infonet ambas trabalha com cookie.',
-        answers: [
-          { description: 'É biscoito em inglês', isRight: false },
-          { description: 'É um dado do site que é armazenado no servidor local (do usuário)', isRight: true },
-          { description: ' É um dado que o site armazena no servidor local até que o usuário saia do site', isRight: false },
-          { description: 'É um dado irrelevante que só serve para deixar a internet mais lenta', isRight: false },
-        ]
-      },
-      {
-        title: 'Em qual dessas partes da estrutura HTML se conecta a linguagem ao CSS?',
-        description: 'testfddgfgr',
-        answers: [
-          { description: 'head', isRight: true },
-          { description: 'header', isRight: false },
-          { description: 'script', isRight: false },
-          { description: 'body', isRight: false },
-        ]
-      },
-      {
-        title: 'Assinale a escolha mais antiética a se fazer na internet.',
-        description: 'testfddgfgr',
-        answers: [
-          { description: 'Não praticar o cyberbullying', isRight: false },
-          { description: 'Contribuir com a disseminação de informações verdadeiras', isRight: false },
-          { description: 'Fazer ações de proteção da fauna e flora nas redes sociais', isRight: false },
-          { description: ' Praticar o Doxx (Vazamento de Dados)', isRight: true },
-        ]
-      }
-    ];
-
-curquestion: Question[];
-
-  constructor(private router: Router, private levelPage: LevelPage) {
-    this.curquestion = levelPage.questions;
-    this.curquestion.sort((a,b) => 0.5 - Math.random());
-
-nextQuestion(): Question{
-    if( this.questionCount < 5){
-    const randomIndex: number = Math.floor(Math.random()*this.curquestion.length);
-    this.questionCount++;
-    console.log(this.curquestion);
-    return this.curquestion.splice(randomIndex, 1)[0];
-}
 
 /*<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="720" height="1020" preserveAspectRatio="none" viewBox="0 0 720 1020">
     <g mask="url(&quot;#SvgjsMask1836&quot;)" fill="none">
