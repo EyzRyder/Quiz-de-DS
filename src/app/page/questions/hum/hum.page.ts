@@ -3,13 +3,12 @@ import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-etim',
-  templateUrl: './etim.page.html',
-  styleUrls: ['./etim.page.scss'],
+  selector: 'app-hum',
+  templateUrl: './hum.page.html',
+  styleUrls: ['./hum.page.scss'],
 })
-export class EtimPage implements OnInit {
+export class HumPage implements OnInit {
   curQuesion: Question;
   constructor(
     private questionService: QuestionService,

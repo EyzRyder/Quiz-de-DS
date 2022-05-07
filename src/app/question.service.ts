@@ -11,55 +11,55 @@ export class QuestionService {
    endpoint: number;
   private questions: Question[] = [
     {
-      title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
-      description:'Ds e infonet ambos construem websites',
-      answers: [
-        {description: ' A classificação de endereço de IP externo não existe, só a de endereço de IP', isRight: false},
-        {description: 'O endereço de IP externo não é considerado como dado do usuário', isRight: false},
-        {description: 'O endereço IP externo é o identificador único e exclusivo do usuário da rede', isRight: true},
-        {description: 'O endereço IP externo apenas representa a individualidade do usuário, mas não é usado como um dado', isRight: false},
-      ]
-    },
-    {
-      title: 'Qual destas linguagens de programação ou marcação é utilizada para o layout do site?',
-      description:'Ds e infonet ambos construem websites',
-      answers: [
-        {description: 'HTML', isRight: true},
-        {description: 'Java', isRight: false},
-        {description: 'Angular', isRight: false},
-        {description: 'C', isRight: false},
-      ]
-    },
-    {
-      title: 'O que é cookie na web?',
-      description:'Ds e Infonet ambas trabalha com cookie.',
-      answers: [
-        {description: 'É biscoito em inglês', isRight: false},
-        {description: 'É um dado do site que é armazenado no servidor local (do usuário)', isRight: true},
-        {description: ' É um dado que o site armazena no servidor local até que o usuário saia do site', isRight: false},
-        {description: 'É um dado irrelevante que só serve para deixar a internet mais lenta', isRight: false},
-      ]
-    },
-    {
-      title: 'Em qual dessas partes da estrutura HTML se conecta a linguagem ao CSS?',
+      title: 'Em geral, quais as relações entre eletrônica e DS?',
       description:'',
       answers: [
-        {description: 'head', isRight: true},
-        {description: 'header', isRight: false},
-        {description: 'script', isRight: false},
-        {description: 'body', isRight: false},
+        {description: 'Apenas nos sites.', isRight: false},
+        {description: 'Apenas nos apps.', isRight: false},
+        {description: 'Sites, apps, Banco de dados, construção de PC, design e programação.', isRight: true},
+        {description: 'Nenhuma das alternativas.', isRight: false},
       ]
-    },
-    {
-      title: 'Assinale a escolha mais antiética a se fazer na internet.',
+  },
+  {
+      title: 'Qual linguagem de programação aprenderam e utilizam em eletrônica?',
+      description:'Os apps e sites feitos em eletrônica envolvem programação.',
+      answers: [
+        {description: 'HTML e Java', isRight: false},
+        {description: 'C# e Javascript', isRight: false},
+        {description: 'Python, php e Html.', isRight: false},
+        {description: 'C e HTML', isRight: true},
+      ]
+  },
+  {
+      title: 'Quais construções de eletrônica que fizeram ao decorrer do curso que utilizaram uma certa programação para funcionar.',
       description:'',
       answers: [
-        {description: 'Não praticar o cyberbullying', isRight: false},
-        {description: 'Contribuir com a disseminação de informações verdadeiras', isRight: false},
-        {description: 'Fazer ações de proteção da fauna e flora nas redes sociais', isRight: false},
-        {description: ' Praticar o Doxx (Vazamento de Dados)', isRight: true},
+        {description: 'Construção do LCD (Liquid Crystal Display), Leds, além de sites e apps.', isRight: true},
+        {description: 'Construção de brinquedos.', isRight: false},
+        {description: 'Construção de Robôs.', isRight: false},
+        {description: 'Nenhuma das alternativas.', isRight: false},
       ]
-    }
+  },
+  {
+      title: 'Como hardware e software se relacionam?',
+      description:'',
+      answers: [
+        {description: 'Eles não se relacionam.', isRight: false},
+        {description: 'O hardware destina-se a executar a tarefa no nível da máquina, enquanto o software fornece instruções para o hardware.', isRight: true},
+        {description: 'O software destina-se a executar a tarefa no nível da máquina, enquanto o hardware fornece instruções para o software.', isRight: false},
+        {description: 'Todas as alternativas estão corretas.', isRight: false},
+      ]
+  },
+  {
+      title: 'DS tem relação com Eletro.',
+      description:'',
+      answers: [
+        {description: 'Não tem relação.', isRight: false},
+        {description: 'Não muito, só na parte de Programação.', isRight: false},
+        {description: 'Tem uma grande relação.', isRight: true},
+        {description: 'São a mesma coisa', isRight: false},
+      ]
+  }
     ];
   constructor(private router: Router) {
     this.questions.sort((a,b) => 0.5 - Math.random());
@@ -75,55 +75,55 @@ export class QuestionService {
     this.questions = [];
     const backup: Question[]=[
       {
-        title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
-        description:'Ds e infonet ambos construem websites',
-        answers: [
-          {description: ' A classificação de endereço de IP externo não existe, só a de endereço de IP', isRight: false},
-          {description: 'O endereço de IP externo não é considerado como dado do usuário', isRight: false},
-          {description: 'O endereço IP externo é o identificador único e exclusivo do usuário da rede', isRight: true},
-          {description: 'O endereço IP externo apenas representa a individualidade do usuário, mas não é usado como um dado', isRight: false},
-        ]
-      },
-      {
-        title: 'Qual destas linguagens de programação ou marcação é utilizada para o layout do site?',
-        description:'Ds e infonet ambos construem websites',
-        answers: [
-          {description: 'HTML', isRight: true},
-          {description: 'Java', isRight: false},
-          {description: 'Angular', isRight: false},
-          {description: 'C', isRight: false},
-        ]
-      },
-      {
-        title: 'O que é cookie na web?',
-        description:'Ds e Infonet ambas trabalha com cookie.',
-        answers: [
-          {description: 'É biscoito em inglês', isRight: false},
-          {description: 'É um dado do site que é armazenado no servidor local (do usuário)', isRight: true},
-          {description: ' É um dado que o site armazena no servidor local até que o usuário saia do site', isRight: false},
-          {description: 'É um dado irrelevante que só serve para deixar a internet mais lenta', isRight: false},
-        ]
-      },
-      {
-        title: 'Em qual dessas partes da estrutura HTML se conecta a linguagem ao CSS?',
+        title: 'Em geral, quais as relações entre eletrônica e DS?',
         description:'',
         answers: [
-          {description: 'head', isRight: true},
-          {description: 'header', isRight: false},
-          {description: 'script', isRight: false},
-          {description: 'body', isRight: false},
+          {description: 'Apenas nos sites.', isRight: false},
+          {description: 'Apenas nos apps.', isRight: false},
+          {description: 'Sites, apps, Banco de dados, construção de PC, design e programação.', isRight: true},
+          {description: 'Nenhuma das alternativas.', isRight: false},
         ]
-      },
-      {
-        title: 'Assinale a escolha mais antiética a se fazer na internet.',
+    },
+    {
+        title: 'Qual linguagem de programação aprenderam e utilizam em eletrônica?',
+        description:'Os apps e sites feitos em eletrônica envolvem programação.',
+        answers: [
+          {description: 'HTML e Java', isRight: false},
+          {description: 'C# e Javascript', isRight: false},
+          {description: 'Python, php e Html.', isRight: false},
+          {description: 'C e HTML', isRight: true},
+        ]
+    },
+    {
+        title: 'Quais construções de eletrônica que fizeram ao decorrer do curso que utilizaram uma certa programação para funcionar.',
         description:'',
         answers: [
-          {description: 'Não praticar o cyberbullying', isRight: false},
-          {description: 'Contribuir com a disseminação de informações verdadeiras', isRight: false},
-          {description: 'Fazer ações de proteção da fauna e flora nas redes sociais', isRight: false},
-          {description: ' Praticar o Doxx (Vazamento de Dados)', isRight: true},
+          {description: 'Construção do LCD (Liquid Crystal Display), Leds, além de sites e apps.', isRight: true},
+          {description: 'Construção de brinquedos.', isRight: false},
+          {description: 'Construção de Robôs.', isRight: false},
+          {description: 'Nenhuma das alternativas.', isRight: false},
         ]
-      }
+    },
+    {
+        title: 'Como hardware e software se relacionam?',
+        description:'',
+        answers: [
+          {description: 'Eles não se relacionam.', isRight: false},
+          {description: 'O hardware destina-se a executar a tarefa no nível da máquina, enquanto o software fornece instruções para o hardware.', isRight: true},
+          {description: 'O software destina-se a executar a tarefa no nível da máquina, enquanto o hardware fornece instruções para o software.', isRight: false},
+          {description: 'Todas as alternativas estão corretas.', isRight: false},
+        ]
+    },
+    {
+        title: 'DS tem relação com Eletro.',
+        description:'',
+        answers: [
+          {description: 'Não tem relação.', isRight: false},
+          {description: 'Não muito, só na parte de Programação.', isRight: false},
+          {description: 'Tem uma grande relação.', isRight: true},
+          {description: 'São a mesma coisa', isRight: false},
+        ]
+    }
       ];
     this.questions = backup;
     this.endpoint = 0;

@@ -1,18 +1,18 @@
-import { QuestionService } from './../../../question.service';
+import { Question7Service } from './../../../question7.service';
 import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-etim',
-  templateUrl: './etim.page.html',
-  styleUrls: ['./etim.page.scss'],
+  selector: 'app-info',
+  templateUrl: './info.page.html',
+  styleUrls: ['./info.page.scss'],
 })
-export class EtimPage implements OnInit {
+export class InfoPage implements OnInit {
   curQuesion: Question;
   constructor(
-    private questionService: QuestionService,
+    private questionService: Question7Service,
     private router: Router,
   ) { }
 

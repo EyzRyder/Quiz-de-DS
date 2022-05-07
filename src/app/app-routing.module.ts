@@ -27,6 +27,42 @@ const routes: Routes = [
     path: 'end',
     loadChildren: () => import('./page/end/end.module').then( m => m.EndPageModule)
   },
+  {
+    path: 'adm',
+    loadChildren: () => import('./page/questions/adm/adm.module').then( m => m.AdmPageModule)
+  },
+  {
+    path: 'info',
+    loadChildren: () => import('./page/questions/info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'sj',
+    loadChildren: () => import('./page/questions/sj/sj.module').then( m => m.SjPageModule)
+  },
+  {
+    path: 'bio',
+    loadChildren: () => import('./page/questions/bio/bio.module').then( m => m.BioPageModule)
+  },
+  {
+    path: 'ev',
+    loadChildren: () => import('./page/questions/ev/ev.module').then( m => m.EvPageModule)
+  },
+  {
+    path: 'dg',
+    loadChildren: () => import('./page/questions/dg/dg.module').then( m => m.DgPageModule)
+  },
+  {
+    path: 'di',
+    loadChildren: () => import('./page/questions/di/di.module').then( m => m.DiPageModule)
+  },
+  {
+    path: 'sec',
+    loadChildren: () => import('./page/questions/sec/sec.module').then( m => m.SecPageModule)
+  },
+  {
+    path: 'hum',
+    loadChildren: () => import('./page/questions/hum/hum.module').then( m => m.HumPageModule)
+  },
 ];
 
 @NgModule({
