@@ -302,3 +302,31 @@ nextQuestion(): Question{
     this.questionCount++;
     console.log(this.curquestion);
     return this.curquestion.splice(randomIndex, 1)[0];
+}
+
+/*<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="720" height="1020" preserveAspectRatio="none" viewBox="0 0 720 1020">
+    <g mask="url(&quot;#SvgjsMask1836&quot;)" fill="none">
+        <rect width="720" height="1020" x="0" y="0" fill="url(#SvgjsLinearGradient1837)"></rect>
+        <path d="M64 1020L1084 0L1172.5 0L152.5 1020z" fill="url(#SvgjsLinearGradient1838)"></path>
+        <path d="M634 1020L-386 0L-737 0L283 1020z" fill="url(#SvgjsLinearGradient1839)"></path>
+        <path d="M72.22775725543738 1020L720 372.2277572554374L720 1020z" fill="url(#SvgjsLinearGradient1838)"></path>
+        <path d="M0 1020L647.7722427445626 1020L 0 372.2277572554374z" fill="url(#SvgjsLinearGradient1839)"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1836">
+            <rect width="720" height="1020" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="-10.42%" y1="7.35%" x2="110.42%" y2="92.65%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1837">
+            <stop stop-color="rgba(15, 13, 2, 1)" offset="0"></stop>
+            <stop stop-color="rgba(84, 74, 6, 1)" offset="1"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="SvgjsLinearGradient1838">
+            <stop stop-color="rgba(157, 139, 19, 0.17)" offset="0"></stop>
+            <stop stop-opacity="0" stop-color="rgba(157, 139, 19, 0.17)" offset="0.66"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="SvgjsLinearGradient1839">
+            <stop stop-color="rgba(157, 139, 19, 0.17)" offset="0"></stop>
+            <stop stop-opacity="0" stop-color="rgba(157, 139, 19, 0.17)" offset="0.66"></stop>
+        </linearGradient>
+    </defs>
+</svg>*/
