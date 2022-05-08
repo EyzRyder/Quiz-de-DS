@@ -29,4 +29,5 @@ export class EtimPage implements OnInit {
       this.curQuesion = this.questionService.nextQuestion();
     }
   }
+
 }

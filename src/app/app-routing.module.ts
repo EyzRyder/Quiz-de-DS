@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'end',
-    loadChildren: () => import('./page/end/end.module').then( m => m.EndPageModule)
+    loadChildren: () => import('./page/ending/end/end.module').then( m => m.EndPageModule)
   },
   {
     path: 'adm',
@@ -62,6 +62,42 @@ const routes: Routes = [
   {
     path: 'hum',
     loadChildren: () => import('./page/questions/hum/hum.module').then( m => m.HumPageModule)
+  },
+  {
+    path: 'end1',
+    loadChildren: () => import('./page/ending/end1/end1.module').then( m => m.End1PageModule)
+  },
+  {
+    path: 'end2',
+    loadChildren: () => import('./page/ending/end2/end2.module').then( m => m.End2PageModule)
+  },
+  {
+    path: 'end3',
+    loadChildren: () => import('./page/ending/end3/end3.module').then( m => m.End3PageModule)
+  },
+  {
+    path: 'end4',
+    loadChildren: () => import('./page/ending/end4/end4.module').then( m => m.End4PageModule)
+  },
+  {
+    path: 'end5',
+    loadChildren: () => import('./page/ending/end5/end5.module').then( m => m.End5PageModule)
+  },
+  {
+    path: 'end6',
+    loadChildren: () => import('./page/ending/end6/end6.module').then( m => m.End6PageModule)
+  },
+  {
+    path: 'end7',
+    loadChildren: () => import('./page/ending/end7/end7.module').then( m => m.End7PageModule)
+  },
+  {
+    path: 'end8',
+    loadChildren: () => import('./page/ending/end8/end8.module').then( m => m.End8PageModule)
+  },
+  {
+    path: 'end9',
+    loadChildren: () => import('./page/ending/end9/end9.module').then( m => m.End9PageModule)
   },
 ];
 

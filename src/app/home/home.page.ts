@@ -13,4 +13,5 @@ export class HomePage {
   go(){
     this.router.navigate(['about']);
   }
+
 }

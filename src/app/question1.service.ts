@@ -22,7 +22,7 @@ export class Question1Service {
 },
 {
     title: 'Porque os sites e os Bancos de dados são importantes na administração?',
-    description:'Banco de Dados é armazenamentos de dados.',
+    description:'',
     answers: [
       {description: 'Pois é uma forma de pesquisarmos sobre os temas diversos e armazenar  os dados.', isRight: true},
       {description: 'São usados mas não são importantes.', isRight: false},
@@ -86,7 +86,7 @@ export class Question1Service {
   },
   {
       title: 'Porque os sites e os Bancos de dados são importantes na administração?',
-      description:'Banco de Dados é armazenamentos de dados.',
+      description:'',
       answers: [
         {description: 'Pois é uma forma de pesquisarmos sobre os temas diversos e armazenar  os dados.', isRight: true},
         {description: 'São usados mas não são importantes.', isRight: false},
@@ -130,7 +130,7 @@ export class Question1Service {
    this.questionCount = 0;
    this.endpoint = this.points;
    this.points=0;
-   this.router.navigate(['end']);
+   this.router.navigate(['End1']);
  }
 
  }

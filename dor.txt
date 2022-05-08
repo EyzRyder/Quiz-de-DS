@@ -1,5 +1,5 @@
 adm
- {
+[
    {
       title: ' Qual forma de armazenamento de dados utilizado por DS e Adm?',
       description:'DS e Adm ambas mexem com armazenamentos de dados.',
@@ -50,9 +50,9 @@ adm
         {description: 'nao tem', isRight: false},
       ]
   }
- }
+]
 Eletro
-{
+[
   {
       title: 'Em geral, quais as relações entre eletrônica e DS?',
       description:'',
@@ -103,9 +103,9 @@ Eletro
         {description: 'São a mesma coisa', isRight: false},
       ]
   }
-}
+]
 Info
-{
+[
     {
       title: 'No ponto de vista da navegação da internet, o que o endereço de IP externo representa para o usuário como um dado?',
       description:'Ds e infonet ambos construem websites',
@@ -156,9 +156,9 @@ Info
         {description: ' Praticar o Doxx (Vazamento de Dados)', isRight: true},
       ]
     }
-}
+]
 Bio
-{
+[
   {
       title: 'Qual sistema do nosso corpo humano pode ser comparado às partes do computador: HD e Memória RAM?',
       description:'
@@ -212,9 +212,9 @@ Bio
         {description: 'Sistemas de Planejamento Dosimétrico e radioterapia', isRight: true},
       ]
   }
-}
+]
 Sj
-{
+[
   {
       title: 'Qual dos sites abaixos pode ser usados para organizar documentos juridicos utilizando um banco de dados?',
       description:'organizacao, digitalizacao entre outros',
@@ -265,9 +265,9 @@ Sj
         {description: 'Para serem vendidos', isRight: false},
       ]
   }
-}
+]
 Ev
-{
+[
   {
       title: 'Quais programa(s) vocês mais utilizam em eventos?',
       description:'',
@@ -318,180 +318,172 @@ Ev
         {description: 'Todas estão corretas.', isRight: false},
       ]
   }
-}
+]
 Dg
-{
+[
   {
-      title: '',
+      title: 'O que é SVG e qual seu uso',
       description:'',
       answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
+        {description: 'é um formato de arquivo usado para a criação de logotipos, ícones e elementos interativos', isRight: true},
+        {description: 'é um desenho usado pra brincar com imagens', isRight: false},
+        {description: 'é um formato de arquivo usado para a criação de programa', isRight: false},
+        {description: 'é um Token não fungível usado no mercado do web', isRight: false},
       ]
   }
 
   {
-      title: '',
+      title: 'Que materia de Ds tem um grande relacao com Dg?',
       description:'',
       answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
+        {description: 'Programacao em moblie', isRight: false},
+        {description: 'Informatica', isRight: false},
+        {description: 'Desenvolvimento de Sistemas', isRight: false},
+        {description: 'Design Digital', isRight: true},
       ]
   }
 
   {
-      title: '',
-      description:'',
+      title: 'O que um designer digital faz acessamos?',
+      description:'O designer digital atua no ramo da programação visual dos meios digitais',
       answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
+        {description: 'Brinquedos, moveis, poster fisicos, hardwrae', isRight: false},
+        {description: 'Sites, aplicativos, e-books, jogos de videogame, ou uma interface digital', isRight: true},
+        {description: 'Bancos, casas, lojas, bibliotecas, escolas', isRight: false},
+        {description: 'Nenhuma das alternativas', isRight: false},
       ]
   }
 
   {
-      title: '',
-      description:'',
+      title: 'Que outro formato que podemos comparar o SVG',
+      description:'SVG proporciona altíssima qualidade de imagem, é extremamente escalável, ideal para manter a aparência dos sites em diversos tamanhos de tela.',
       answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
+        {description: 'PH', isRight: false},
+        {description: 'TS', isRight: false},
+        {description: 'PNG', isRight: true},
+        {description: 'PDF', isRight: false},
       ]
   }
 
   {
-      title: '',
+      title: 'Qual o nome do layout do site?',
       description:'',
       answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
+        {description: 'Flowcarts', isRight: false},
+        {description: 'Wareframe', isRight: true},
+        {description: 'Software', isRight: false},
+        {description: 'Mapamental', isRight: false},
       ]
   }
-}
+]
 Sec
-{
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-}
+[
+    {
+        title: 'Se por acaso o seu superior pedir para apresentar um relatório de forma online, qual desses softwares será mais viável para o secretário apresentá-lo?',
+        description:'',
+        answers: [
+          {description: 'Word', isRight: false},
+          {description: 'PowerPoint', isRight: true},
+          {description: 'Excel', isRight: false},
+          {description: 'MS-DOS', isRight: false},
+        ]
+    },
+    {
+        title: 'Qual das alternativas abaixo indica um bom planejamento do secretariado com/para a área de T.I.?',
+        description:'',
+        answers: [
+          {description: 'Criar perfis individuais para cada cliente da empresa', isRight: true},
+          {description: 'Diminuir a proposta de salário do analista de dados', isRight: false},
+          {description: 'Pedir os dados pessoais dos clientes', isRight: false},
+          {description: 'Poupar gastos para implementar novas tecnologias na área de T.I.', isRight: false},
+        ]
+    },
+    {
+        title: 'Como o Banco de Dados pode facilitar o trabalho de um secretário em uma instituição?',
+        description:'',
+        answers: [
+          {description: 'O secretário pode analisar o desenvolvimento da instituição, mas ele não utiliza os dados presentes de forma prática.', isRight: false},
+          {description: 'O secretário é capaz de analisar a produtividade do seu funcionário pelos dados que o sistema capta de sua vida pública', isRight: false},
+          {description: 'O secretário utiliza esses dados, do sistema da instituição em que trabalha, para tomar decisões que ajudem no progresso da mesma', isRight: true},
+          {description: 'Ele não necessita do Banco de Dados para seu trabalho, já que ele consulta todas as informações que obtêm de sua agenda', isRight: false},
+        ]
+    },
+    {
+        title:'Como peça fundamental de uma instituição para desenvolvimento de seus variados setores, qual deles o secretariado deve consultar mais se ele quiser informatizar um outro setor?',
+        description:'',
+        answers: [
+          {description: 'Financeiro', isRight: false},
+          {description: 'logística', isRight: false},
+          {description: 'Compras', isRight: false},
+          {description: 'T.I.', isRight: true},
+        ]
+    },
+    {
+        title: 'Para poder auxiliar o secretário no monitoramento dos variados setores de sua instituição, qual das possíveis soluções é a mais viável?',
+        description:'',
+        answers: [
+          {description: 'Criar tabelas de dados de cada setor que se relacionam na Base de Dados', isRight: true},
+          {description: 'Arrumar uma semana de seu trabalho para entender o setor', isRight: false},
+          {description: 'Aplicar tarefas hipotéticas a cada setor e aprender na tentativa e erro', isRight: false},
+          {description: 'Simplesmente, não fazer nada', isRight: false},
+        ]
+    }
+]
 Di
-{
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-
-  {
-      title: '',
-      description:'',
-      answers: [
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-        {description: '', isRight: },
-      ]
-  }
-}
+[
+    {
+        title: 'Segundo a teoria das cores RGB (cores aditivas ou luzes coloridas), a mistura das luzes vermelha, azul e verde resulta em qual cor?',
+        description:'',
+        answers: [
+          {description: 'Preta', isRight: false},
+          {description: 'Branca', isRight: true},
+          {description: 'Marrom', isRight: false},
+          {description: 'Verde-arroxeado', isRight: false},
+        ]
+    },
+    {
+        title: 'Sendo ambas formas diferentes de aplicar o método do Design, qual o objetivo em comum do Design Digital e do Design de Interiores?',
+        description:'o Design Digital molda o layout de sites, softwares e sistemas',
+        answers: [
+          {description: 'Ambas visam criar imagens, desenhos ou representações que auxiliem, de alguma forma, em sua função e/ou mensagem', isRight: true},
+          {description: 'As duas não tem nada em comum', isRight: false},
+          {description: 'Ambas são utilizadas para a produção de um produto e seu sucesso de vendas', isRight: false},
+          {description: 'Ambas são utilizadas para tornar o produto mais atraente', isRight: false},
+        ]
+    },
+    {
+        title: 'Qual das cores abaixo poderia ser utilizada para passar a imagem de alegria e boa recepção em um local?',
+        description:'',
+        answers: [
+          {description: 'Vermelho', isRight: false},
+          {description: 'Amarelo', isRight: true},
+          {description: 'Azul', isRight: false},
+          {description: 'Rosa', isRight: false},
+        ]
+    },
+    {
+        title: 'Porque é tão importante, sendo em um interior de um local ou em uma interface gráfica, deixar um espaço considerável entre os elementos?',
+        description:'',
+        answers: [
+          {description: 'Para colocar mais elementos futuramente, se for preciso', isRight: false},
+          {description: 'Para preencher com detalhes adicionais', isRight: false},
+          {description: 'Para deixar mais bonito, pois assim estimula o cliente a comprar o produto', isRight: false},
+          {description: 'Para deixar espaços de alívio visual, facilitando o raciocínio organizacional do local', isRight: true},
+        ]
+    },
+    {
+        title: 'Porque Design não pode ser confundido com arte?',
+        description:'',
+        answers: [
+          {description: 'Porque o Design não visa a manifestação dos sentimentos do autor para outros e, sim, a  estimulação das sensações do receptor da obra', isRight: true},
+          {description: 'Porque o Design não utiliza as cores para estimular os sentimentos do usuário da obra', isRight: false},
+          {description: 'Porque, diferente do Design, o mundo das artes leva em consideração as diferentes percepções de beleza', isRight: false},
+          {description: 'Porque o Design não é capaz de abordar temas variados em suas criações', isRight: false},
+        ]
+    }
+]
 hum
-{
+[
   {
       title: '',
       description:'',
@@ -546,7 +538,7 @@ hum
         {description: '', isRight: },
       ]
   }
-}
+]
 
 {
       title: '',

@@ -17,7 +17,6 @@
       <i>
         <span>{{curQuesion.description}}</span>
       </i>
-
       <div class="flex">
         <div (click)="doAnswer(answer)" *ngFor="let answer of curQuesion.answers" class="answers">
           <span class="answer">{{answer.description}}</span>
