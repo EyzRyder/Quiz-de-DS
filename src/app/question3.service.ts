@@ -19,8 +19,7 @@ export class Question3Service {
         {description: 'é um formato de arquivo usado para a criação de programa', isRight: false},
         {description: 'é um Token não fungível usado no mercado do web', isRight: false},
       ]
-  }
-
+  },
   {
       title: 'Que materia de Ds tem um grande relacao com Dg?',
       description:'',
@@ -30,8 +29,7 @@ export class Question3Service {
         {description: 'Desenvolvimento de Sistemas', isRight: false},
         {description: 'Design Digital', isRight: true},
       ]
-  }
-
+  },
   {
       title: 'O que um designer digital faz acessamos?',
       description:'O designer digital atua no ramo da programação visual dos meios digitais',
@@ -41,8 +39,7 @@ export class Question3Service {
         {description: 'Bancos, casas, lojas, bibliotecas, escolas', isRight: false},
         {description: 'Nenhuma das alternativas', isRight: false},
       ]
-  }
-
+  },
   {
       title: 'Que outro formato que podemos comparar o SVG',
       description:'SVG proporciona altíssima qualidade de imagem, é extremamente escalável, ideal para manter a aparência dos sites em diversos tamanhos de tela.',
@@ -52,8 +49,7 @@ export class Question3Service {
         {description: 'PNG', isRight: true},
         {description: 'PDF', isRight: false},
       ]
-  }
-
+  },
   {
       title: 'Qual o nome do layout do site?',
       description:'',
@@ -87,8 +83,7 @@ export class Question3Service {
           {description: 'é um formato de arquivo usado para a criação de programa', isRight: false},
           {description: 'é um Token não fungível usado no mercado do web', isRight: false},
         ]
-    }
-
+    },
     {
         title: 'Que materia de Ds tem um grande relacao com Dg?',
         description:'',
@@ -98,8 +93,7 @@ export class Question3Service {
           {description: 'Desenvolvimento de Sistemas', isRight: false},
           {description: 'Design Digital', isRight: true},
         ]
-    }
-
+    },
     {
         title: 'O que um designer digital faz acessamos?',
         description:'O designer digital atua no ramo da programação visual dos meios digitais',
@@ -109,8 +103,7 @@ export class Question3Service {
           {description: 'Bancos, casas, lojas, bibliotecas, escolas', isRight: false},
           {description: 'Nenhuma das alternativas', isRight: false},
         ]
-    }
-
+    },
     {
         title: 'Que outro formato que podemos comparar o SVG',
         description:'SVG proporciona altíssima qualidade de imagem, é extremamente escalável, ideal para manter a aparência dos sites em diversos tamanhos de tela.',
@@ -120,8 +113,7 @@ export class Question3Service {
           {description: 'PNG', isRight: true},
           {description: 'PDF', isRight: false},
         ]
-    }
-
+    },
     {
         title: 'Qual o nome do layout do site?',
         description:'',
@@ -138,7 +130,7 @@ export class Question3Service {
    this.questionCount = 0;
    this.endpoint = this.points;
    this.points=0;
-   this.router.navigate(['end3']);
+   this.router.navigate(['end']);
  }
 
  }

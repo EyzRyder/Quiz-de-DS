@@ -130,7 +130,7 @@ export class Question1Service {
    this.questionCount = 0;
    this.endpoint = this.points;
    this.points=0;
-   this.router.navigate(['End1']);
+   this.router.navigate(['End']);
  }
 
  }

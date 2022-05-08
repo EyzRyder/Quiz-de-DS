@@ -1,4 +1,4 @@
-import { QuestionService } from './../../../question.service';
+import { Question9Service } from './../../../question9.service';
 import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class SecPage implements OnInit {
   curQuesion: Question;
   constructor(
-    private questionService: QuestionService,
+    private questionService: Question9Service,
     private router: Router,
   ) { }
 
