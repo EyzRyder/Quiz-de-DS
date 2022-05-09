@@ -1,4 +1,4 @@
-import { Question7Service } from './../../../question7.service';
+import { QuestionService } from './../../../question.service';
 import { Question, QuestionAnswer } from './../../../models/question';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -12,21 +12,21 @@ import { Router } from '@angular/router';
 export class InfoPage implements OnInit {
   curQuesion: Question;
   constructor(
-    private questionService: Question7Service,
+    private questionService: QuestionService,
     private router: Router,
   ) { }
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questionService.nextQuestion();
+    this.curQuesion = this.questionService.nextQuestionInfo();
   }
 
   doAnswer(answer: QuestionAnswer) {
     if (answer.isRight) {
       this.questionService.points++;
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionInfo();
     } else {
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionInfo();
     }
   }
 }

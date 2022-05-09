@@ -17,15 +17,15 @@ export class DiPage implements OnInit {
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questionService.nextQuestion();
+    this.curQuesion = this.questionService.nextQuestionDi();
   }
 
   doAnswer(answer: QuestionAnswer) {
     if (answer.isRight) {
       this.questionService.points++;
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionDi();
     } else {
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionDi();
     }
   }
 }

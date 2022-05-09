@@ -18,15 +18,15 @@ export class EtimPage implements OnInit {
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questionService.nextQuestion();
+    this.curQuesion = this.questionService.nextQuestionEtim();
   }
 
   doAnswer(answer: QuestionAnswer) {
     if (answer.isRight) {
       this.questionService.points++;
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionEtim();
     } else {
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionEtim();
     }
   }
 

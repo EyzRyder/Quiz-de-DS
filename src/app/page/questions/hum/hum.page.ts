@@ -17,15 +17,15 @@ export class HumPage implements OnInit {
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questionService.nextQuestion();
+    this.curQuesion = this.questionService.nextQuestionHum();
   }
 
   doAnswer(answer: QuestionAnswer) {
     if (answer.isRight) {
       this.questionService.points++;
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionHum();
     } else {
-      this.curQuesion = this.questionService.nextQuestion();
+      this.curQuesion = this.questionService.nextQuestionHum();
     }
   }
 }
