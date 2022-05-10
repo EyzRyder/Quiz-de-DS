@@ -10,8 +10,7 @@ import { Router } from '@angular/router';
 })
 export class BioPage implements OnInit {
   curQuesion: Question;
-  constructor(
-    private questionService: QuestionService,
+constructor( private questionService: QuestionService,
     private router: Router,
   ) { }
 

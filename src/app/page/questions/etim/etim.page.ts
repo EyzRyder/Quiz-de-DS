@@ -11,8 +11,7 @@ import { Router } from '@angular/router';
 })
 export class EtimPage implements OnInit {
   curQuesion: Question;
-  constructor(
-    private questionService: QuestionService,
+constructor( private questionService: QuestionService,
     private router: Router,
   ) { }
 
