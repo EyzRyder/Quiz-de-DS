@@ -1,4 +1,3 @@
-import { CursosService } from './cursos.service';
 import { Injectable } from '@angular/core';
 import { Question, QuestionAnswer } from './models/question';
 import { Router } from '@angular/router';
@@ -10,197 +9,127 @@ export class QuestionService {
   questionCount: number = 0;
   points: number = 0;
   endpoint: number;
-  private questionsEtim: Question[] = this.cursosService.questionsEtim;
-  private questionsAdm: Question[] = this.cursosService.questionsAdm;
-  private questionsSj: Question[] = this.cursosService.questionsSj;
-  private questionsDg: Question[] = this.cursosService.questionsDg;
-  private questionsEv: Question[] = this.cursosService.questionsEv;
-  private questionsHum: Question[] = this.cursosService.questionsHum;
-  private questionsBio: Question[] = this.cursosService.questionsBio;
-  private questionsInfo: Question[] = this.cursosService.questionsInfo;
-  private questionsDi: Question[] = this.cursosService.questionsDi;
-  private questionsSec: Question[] = this.cursosService.questionsSec;
-  constructor(private router: Router, private cursosService: CursosService) {
-    this.questionsEtim.sort((a, b) => 0.5 - Math.random());
-    this.questionsAdm.sort((a, b) => 0.5 - Math.random());
-    this.questionsSj.sort((a, b) => 0.5 - Math.random());
-    this.questionsDg.sort((a, b) => 0.5 - Math.random());
-    this.questionsEv.sort((a, b) => 0.5 - Math.random());
-    this.questionsHum.sort((a, b) => 0.5 - Math.random());
-    this.questionsBio.sort((a, b) => 0.5 - Math.random());
-    this.questionsInfo.sort((a, b) => 0.5 - Math.random());
-    this.questionsDi.sort((a, b) => 0.5 - Math.random());
-    this.questionsSec.sort((a, b) => 0.5 - Math.random());
+  private questions: Question[] = [
+    {
+      title: 'Como hardware e software se relacionam?',
+      description: '',
+      answers: [
+        { description: 'Eles não se relacionam.', isRight: false },
+        { description: 'O hardware destina-se a executar a tarefa no nível da máquina,enquanto o software fornece instruções para o hardware.', isRight: true },
+        { description: 'O software destina-se a executar a tarefa no nível da máquina, enquanto o hardware fornece instruções para o software.', isRight: false },
+        { description: 'Todas as alternativas estão corretas.', isRight: false },
+      ]
+    },
+    {
+      title: 'Que tipo (s) de administração tem em DS?',
+      description: '',
+      answers: [
+        { description: 'Administração de Banco de Dados, Scrum Master e Administração de redes', isRight: true },
+        { description: 'Administração de Banco de Dados e Administração de redes', isRight: false },
+        { description: 'Apenas administração de redes', isRight: false },
+        { description: 'nao tem', isRight: false },
+      ]
+    },
+    {
+      title: 'Qual dos sites abaixos pode ser usados para organizar documentos juridicos utilizando um banco de dados?',
+      description: 'organizacao, digitalizacao entre outros',
+      answers: [
+        { description: 'W3K DRIVING DIGITAL TRANSFORMATION', isRight: true },
+        { description: 'WIKIPÉDIA', isRight: false },
+        { description: 'YAPOLI', isRight: false },
+        { description: 'AMAZON MANAGEMENT', isRight: false },
+      ]
+    },
+    {
+      title: 'Que materia de Ds tem um grande relacao com Dg?',
+      description: '',
+      answers: [
+        { description: 'Programacao em moblie', isRight: false },
+        { description: 'Informatica', isRight: false },
+        { description: 'Desenvolvimento de Sistemas', isRight: false },
+        { description: 'Design Digital', isRight: true },
+      ]
+    },
+    {
+      title: 'Assinale a alternativa mais viável para se realizar o descarte de lixo eletrônico:',
+      description: 'DS utilizam frequentemente PCs para realizar seu trabalho. Porém a vida de seu hardware não é tão longa e o descarte incorreto pode acarretar em sérios impactos ambientais',
+      answers: [
+        { description: 'Leve ao ponto de coleta de lixo eletrônico mais próximo de sua residência', isRight: true },
+        { description: 'Separe o lixo eletrônico em uma sacola de lixo para, então, ser devidamente tratada pelos lixeiros', isRight: false },
+        { description: 'Desmonte-o e misture-o com o lixo comum', isRight: false },
+        { description: 'Descarte o hardware em um terreno baldio e deixe a natureza fazer sua decomposição', isRight: false },
+      ]
+    },
+  ];
+  constructor(private router: Router) {
+    this.questions.sort((a, b) => 0.5 - Math.random());
   }
 
-  nextQuestionEtim(): Question {
+  nextQuestion(): Question {
     if (this.questionCount < 5) {
-      const randomIndex: number = Math.floor(Math.random() * this.questionsEtim.length);
+      const randomIndex: number = Math.floor(Math.random() * this.questions.length);
       this.questionCount++;
-      return this.questionsEtim.splice(randomIndex, 1)[0];
+      return this.questions.splice(randomIndex, 1)[0];
     } else {
-      this.questionsEtim = [];
-      const backup: Question[] = this.cursosService.questionsEtim;
-      this.questionsEtim = backup;
+      this.questions = [];
+      const backup = [
+        {
+          title: 'Como hardware e software se relacionam?',
+          description: '',
+          answers: [
+            { description: 'Eles não se relacionam.', isRight: false },
+            { description: 'O hardware destina-se a executar a tarefa no nível da máquina,enquanto o software fornece instruções para o hardware.', isRight: true },
+            { description: 'O software destina-se a executar a tarefa no nível da máquina, enquanto o hardware fornece instruções para o software.', isRight: false },
+            { description: 'Todas as alternativas estão corretas.', isRight: false },
+          ]
+        },
+        {
+          title: 'Que tipo (s) de administração tem em DS?',
+          description: '',
+          answers: [
+            { description: 'Administração de Banco de Dados, Scrum Master e Administração de redes', isRight: true },
+            { description: 'Administração de Banco de Dados e Administração de redes', isRight: false },
+            { description: 'Apenas administração de redes', isRight: false },
+            { description: 'nao tem', isRight: false },
+          ]
+        },
+        {
+          title: 'Qual dos sites abaixos pode ser usados para organizar documentos juridicos utilizando um banco de dados?',
+          description: 'organizacao, digitalizacao entre outros',
+          answers: [
+            { description: 'W3K DRIVING DIGITAL TRANSFORMATION', isRight: true },
+            { description: 'WIKIPÉDIA', isRight: false },
+            { description: 'YAPOLI', isRight: false },
+            { description: 'AMAZON MANAGEMENT', isRight: false },
+          ]
+        },
+        {
+          title: 'Que materia de Ds tem um grande relacao com Dg?',
+          description: '',
+          answers: [
+            { description: 'Programacao em moblie', isRight: false },
+            { description: 'Informatica', isRight: false },
+            { description: 'Desenvolvimento de Sistemas', isRight: false },
+            { description: 'Design Digital', isRight: true },
+          ]
+        },
+        {
+          title: 'Assinale a alternativa mais viável para se realizar o descarte de lixo eletrônico:',
+          description: 'DS utilizam frequentemente PCs para realizar seu trabalho. Porém a vida de seu hardware não é tão longa e o descarte incorreto pode acarretar em sérios impactos ambientais',
+          answers: [
+            { description: 'Leve ao ponto de coleta de lixo eletrônico mais próximo de sua residência', isRight: true },
+            { description: 'Separe o lixo eletrônico em uma sacola de lixo para, então, ser devidamente tratada pelos lixeiros', isRight: false },
+            { description: 'Desmonte-o e misture-o com o lixo comum', isRight: false },
+            { description: 'Descarte o hardware em um terreno baldio e deixe a natureza fazer sua decomposição', isRight: false },
+          ]
+        },
+      ];
+      this.questions = backup;
       this.endpoint = 0;
       this.questionCount = 0;
       this.endpoint = this.points;
       this.points = 0;
       this.router.navigate(['end']);
     }
-
-}
-  nextQuestionAdm(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsAdm.length);
-    this.questionCount++;
-    return this.questionsAdm.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsAdm = [];
-    const backup: Question[] = this.cursosService.questionsAdm;
-    this.questionsAdm = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
   }
-
-}
-  nextQuestionSj(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsSj.length);
-    this.questionCount++;
-    return this.questionsSj.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsSj = [];
-    const backup: Question[] = this.cursosService.questionsSj;
-    this.questionsSj = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionDg(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsDg.length);
-    this.questionCount++;
-    return this.questionsDg.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsDg = [];
-    const backup: Question[] = this.cursosService.questionsDg;
-    this.questionsDg = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionEv(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsEv.length);
-    this.questionCount++;
-    return this.questionsEv.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsEv = [];
-    const backup: Question[] = this.cursosService.questionsEv;
-    this.questionsEv = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionHum(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsHum.length);
-    this.questionCount++;
-    return this.questionsHum.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsHum = [];
-    const backup: Question[] = this.cursosService.questionsHum;
-    this.questionsHum = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionBio(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsBio.length);
-    this.questionCount++;
-    return this.questionsBio.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsBio = [];
-    const backup: Question[] = this.cursosService.questionsBio;
-    this.questionsBio = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionInfo(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsInfo.length);
-    this.questionCount++;
-    return this.questionsInfo.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsInfo = [];
-    const backup: Question[] = this.cursosService.questionsInfo;
-    this.questionsInfo = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionDi(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsDi.length);
-    this.questionCount++;
-    return this.questionsDi.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsDi = [];
-    const backup: Question[] = this.cursosService.questionsDi;
-    this.questionsDi = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
-  nextQuestionSec(): Question {
-  if (this.questionCount < 5) {
-    const randomIndex: number = Math.floor(Math.random() * this.questionsSec.length);
-    this.questionCount++;
-    return this.questionsSec.splice(randomIndex, 1)[0];
-  } else {
-    this.questionsSec = [];
-    const backup: Question[] = this.cursosService.questionsSec;
-    this.questionsSec = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
-  }
-
-}
 }

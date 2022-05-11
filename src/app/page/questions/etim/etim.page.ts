@@ -17,15 +17,15 @@ constructor( private questionService: QuestionService,
 
 
   ngOnInit(): void {
-    this.curQuesion = this.questionService.nextQuestionEtim();
+    this.curQuesion = this.questionService.nextQuestion();
   }
 
   doAnswer(answer: QuestionAnswer) {
     if (answer.isRight) {
       this.questionService.points++;
-      this.curQuesion = this.questionService.nextQuestionEtim();
+      this.curQuesion = this.questionService.nextQuestion();
     } else {
-      this.curQuesion = this.questionService.nextQuestionEtim();
+      this.curQuesion = this.questionService.nextQuestion();
     }
   }
 
