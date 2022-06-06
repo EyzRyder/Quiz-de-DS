@@ -64,3 +64,28 @@ ion-content#bg {
   --background-repeat: no-repeat;
   background-size: cover;
 }
+#img{
+width: 50%;
+height: 50%;
+}
+@media screen and (min-width: 1000px) {
+  #container{
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+  }
+  #img{
+  width: 30%;
+  height: 30%;
+  }
+  .buttons{
+        width: 30%;
+          margin: auto;
+  }
+  .buttons .btn,.buttons .btn2 {
+    width: 50%;
+    margin: auto;
+    float: left;
+    display: block;
+  }
+}
