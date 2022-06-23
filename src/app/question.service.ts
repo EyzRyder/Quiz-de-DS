@@ -1,4 +1,3 @@
-import { CursosService } from './cursos.service';
 import { Injectable } from '@angular/core';
 import { Question, QuestionAnswer } from './models/question';
 import { Router } from '@angular/router';
@@ -530,7 +529,7 @@ export class QuestionService {
       ]
   }
   ];
-  constructor(private router: Router, private cursosService: CursosService) {
+  constructor(private router: Router) {
     this.questionsEtim.sort((a, b) => 0.5 - Math.random());
     this.questionsAdm.sort((a, b) => 0.5 - Math.random());
     this.questionsSj.sort((a, b) => 0.5 - Math.random());
