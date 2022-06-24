@@ -18,6 +18,7 @@ constructor( private questionService: QuestionService,
 
   ngOnInit(): void {
     this.curQuesion = this.questionService.nextQuestionInfo();
+    this.questionService.start();
   }
 
   doAnswer(answer: QuestionAnswer) {

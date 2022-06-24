@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./end.page.scss'],
 })
 export class EndPage implements OnInit {
-constructor( private questionService: QuestionService, private router: Router,)
+  constructor(
+    private questionService: QuestionService,
+    private router: Router,
+  )
     {}
 
   ngOnInit() {

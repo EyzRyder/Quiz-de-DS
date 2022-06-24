@@ -3,10 +3,18 @@
   <div class="top">
     <div class="time">
       <p>Tempo</p>
-      <p class = "counter"><span class="hour yellow">00</span>:<span class="minute yellow">00</span>:<span class="second yellow">00</span></p></div>
+      <p class="counter">
+        <span class="hour yellow">{{questionService.hh}}</span>:
+        <span class="minute yellow">{{questionService.mm}}</span>:
+        <span class="second yellow">{{questionService.ss}}</span>
+      </p>
+    </div>
     <div class="score">
       <p>Pontuação</p>
-      <p class ="score yellow">{{questionService.points}}</p></div>
+      <ion-chip color="secondary">
+        <p class="score yellow">{{questionService.points}}</p>
+      </ion-chip>
+    </div>
   </div>
   <div class="container">
     <div class="center">

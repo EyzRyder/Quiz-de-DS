@@ -9,6 +9,13 @@ export class QuestionService {
   questionCount: number = 0;
   points: number = 0;
   endpoint: number;
+  ss: number = 0;
+  mm: number = 0;
+  hh: number = 0;
+  ssf: number = 0;
+  mmf: number = 0;
+  hhf: number = 0;
+  temp: any;
   private questionsEtim: Question[] = [
     {
       title: 'Em geral, quais as relações entre eletrônica e DS?',
@@ -541,7 +548,39 @@ export class QuestionService {
     this.questionsDi.sort((a, b) => 0.5 - Math.random());
     this.questionsSec.sort((a, b) => 0.5 - Math.random());
   }
+  start() {
+    this.temp = setInterval(() => { this.timer(); }, 1000);
+  }
+  timer() {
+    this.ss++;
+    if (this.ss == 60) {
+      this.ss = 0;
+      this.mm++;
 
+      if (this.mm == 60) {
+        this.mm = 0;
+        this.hh++;
+      }
+    }
+  }
+
+  reset() {
+    this.endpoint = 0;
+    this.questionCount = 0;
+    this.ssf = 0;
+    this.mmf = 0;
+    this.hhf = 0;
+    this.ssf = this.ss;
+    this.mmf = this.mm;
+    this.hhf = this.hh;
+    clearInterval(this.temp);
+    this.endpoint = this.points;
+    this.points = 0;
+    this.ss = 0;
+    this.mm = 0;
+    this.hh = 0;
+    this.router.navigate(['end']);
+}
   nextQuestionEtim(): Question {
     if (this.questionCount < 5) {
       const randomIndex: number = Math.floor(Math.random() * this.questionsEtim.length);
@@ -602,11 +641,7 @@ export class QuestionService {
     }
   ];
       this.questionsEtim = backup;
-      this.endpoint = 0;
-      this.questionCount = 0;
-      this.endpoint = this.points;
-      this.points = 0;
-      this.router.navigate(['end']);
+      this.reset();
     }
 
 }
@@ -670,11 +705,7 @@ export class QuestionService {
   }
   ];
     this.questionsAdm = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -738,11 +769,7 @@ export class QuestionService {
   }
   ];
     this.questionsSj = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -806,11 +833,7 @@ export class QuestionService {
     }
   ];
     this.questionsDg = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -874,11 +897,7 @@ export class QuestionService {
   }
   ];
     this.questionsEv = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -942,11 +961,7 @@ export class QuestionService {
     }
   ];
     this.questionsHum = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -1010,11 +1025,7 @@ export class QuestionService {
   }
   ];
     this.questionsBio = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -1078,11 +1089,7 @@ export class QuestionService {
     }
   ];
     this.questionsInfo = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -1146,11 +1153,7 @@ export class QuestionService {
   }
   ];
     this.questionsDi = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
@@ -1214,11 +1217,7 @@ export class QuestionService {
   }
   ];
     this.questionsSec = backup;
-    this.endpoint = 0;
-    this.questionCount = 0;
-    this.endpoint = this.points;
-    this.points = 0;
-    this.router.navigate(['end']);
+    this.reset();
   }
 
 }
