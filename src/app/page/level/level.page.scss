@@ -18,6 +18,20 @@
 
 }
 .quiz-box{
-  text-align: center;
+text-align: center;
+  display: flex;
   position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px){
+  .ioncolwrap{
+        flex: 0 0 calc(6 / var(--ion-grid-columns, 12) * 50%);
+          width: calc(6 / var(--ion-grid-columns, 12) * 50%);
+          max-width: calc(6 / var(--ion-grid-columns, 12) * 100%);
+  }
 }

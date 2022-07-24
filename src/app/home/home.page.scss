@@ -68,9 +68,12 @@ ion-content#bg {
 width: 50%;
 height: 50%;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
+  ion-header{
+    display: none;
+  }
   #container{
-    width: 1000px;
+    width: 100%;
     margin: auto;
     align-items: center;
   }
@@ -79,13 +82,12 @@ height: 50%;
   height: 30%;
   }
   .buttons{
-        width: 30%;
+        width: 52%;
+          display: flex;
           margin: auto;
+          flex-direction: column;
   }
   .buttons .btn,.buttons .btn2 {
-    width: 50%;
-    margin: auto;
-    float: left;
-    display: block;
+      margin: 5px;
   }
 }

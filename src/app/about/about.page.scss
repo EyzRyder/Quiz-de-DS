@@ -11,3 +11,45 @@ a {
 .paulo {
   background: url("../../assets/img/paulo.png");
 }
+
+ion-title{
+  text-align: center;
+}
+@media screen and (min-width: 680px) {
+    #container {
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+      }
+      ion-card{
+        width: 64%;
+      }
+      .devs{
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 1000px) {
+  #container {
+        display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-content: center;
+          flex-wrap: nowrap;
+  }
+
+  ion-card {
+    height: auto;
+    width: 250%;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+}
