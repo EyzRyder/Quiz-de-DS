@@ -184,20 +184,20 @@ export class QuestionService {
         ]
     },
     {
-        title: 'Que materia de Ds tem um grande relacao com Dg?',
+        title: 'Que materia de Ds tem um grande relação com Dg?',
         description:'',
         answers: [
-          {description: 'Programacao em moblie', isRight: false},
+          {description: 'Programação em moblie', isRight: false},
           {description: 'Informatica', isRight: false},
           {description: 'Desenvolvimento de Sistemas', isRight: false},
           {description: 'Design Digital', isRight: true},
         ]
     },
     {
-        title: 'O que um designer digital faz acessamos?',
+        title: 'O que um designer digital faz que usamos?',
         description:'O designer digital atua no ramo da programação visual dos meios digitais',
         answers: [
-          {description: 'Brinquedos, moveis, poster fisicos, hardwrae', isRight: false},
+          {description: 'Brinquedos, moveis, poster físicos, hardware', isRight: false},
           {description: 'Sites, aplicativos, e-books, jogos de videogame, ou uma interface digital', isRight: true},
           {description: 'Bancos, casas, lojas, bibliotecas, escolas', isRight: false},
           {description: 'Nenhuma das alternativas', isRight: false},
