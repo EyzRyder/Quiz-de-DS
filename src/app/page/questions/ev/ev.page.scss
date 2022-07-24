@@ -1,11 +1,11 @@
-.content-page{
+.content-page {
   min-height: 100%;
   min-width: 100%;
   text-align: center;
   --background: #121212;
 }
 
-.top{
+.top {
   padding: 3% 0 0 0;
   width: 80%;
   display: inline-flex;
@@ -36,11 +36,11 @@ p {
   margin-inline-end: 0px;
 }
 
-.yellow{
+.yellow {
   color: yellow;
 }
 
-.conteiner span{
+.conteiner span {
   font-size: small;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -60,26 +60,28 @@ p {
   text-align: center;
 }
 
-div{
+div {
   display: block;
 }
 
 .center {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
 .flex {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
   flex-basis: auto;
   max-width: 260px;
   height: auto;
-  flex-wrap: wrap;
 }
 
-.answers{
+.answers {
   margin: 10px;
   padding-left: 25px;
   padding-right: 25px;

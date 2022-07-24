@@ -27,7 +27,7 @@ constructor( private questionService: QuestionService,
     if (answer.isRight) {
       this.questionService.points++;
       this.curQuesion = this.questionService.nextQuestionEtim();
-    } else {
+    } else if (answer.isRight == false) {
       this.curQuesion = this.questionService.nextQuestionEtim();
     }
   }
